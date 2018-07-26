@@ -10,7 +10,13 @@ import './custom.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet 
+      title="Amazix Rewards | Blog" 
+      meta={[
+          { name: 'description', content: 'Amazix Rewards - Crypto Bounties Lottereis and Contests' },
+          { name: 'keywords', content: 'Bounties, Crypto, Cotnests, Lotteries, Rewards' },
+        ]}
+      />
     <Navbar />
     <div className="content-wrapper">{children()}</div>
     <Footer />

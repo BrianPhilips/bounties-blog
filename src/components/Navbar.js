@@ -20,7 +20,7 @@ export default class Navbar extends Component {
     const menuActive = this.state.showMenu ? 'menu_collapsed' : '';
     const burgerActive = this.state.showMenu ? 'menu_collapsed' : '';
     return (
-      <nav className="navbar root">
+      <nav className="root">
         <div className="wrapper">
           <div className="left">
             <div className="logo">
@@ -39,22 +39,22 @@ export default class Navbar extends Component {
 
               <ul className={`mainnav menu_collapsed" ${menuActive}`} >
                 <li className="nav-item cl-effect-1">
-                  <a className="navbar-item" href="https://www.bounties.biz/">
+                  <a className="nav-item" href="https://www.bounties.biz/">
                     Rewards
                   </a>   
                 </li>
                 <li className="nav-item cl-effect-1">
-                  <a className="navbar-item" href="https://www.bounties.biz/contests">
+                  <a className="nav-item" href="https://www.bounties.biz/contests">
                     Contests
                   </a>
                 </li>
                 <li className="nav-item cl-effect-1">
-                  <a className="navbar-item" href="https://www.bounties.biz/lotteries">
+                  <a className="nav-item" href="https://www.bounties.biz/lotteries">
                     Lotteries
                   </a>            
                 </li>
                 <li className="nav-item cl-effect-1">
-                  <Link className="navbar-item" to="/">
+                  <Link className="nav-item" to="/">
                     Blog
                   </Link> 
                 </li>

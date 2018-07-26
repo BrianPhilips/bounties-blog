@@ -11,7 +11,7 @@ export default class Footer extends Component {
         <div className="comp__footer_container">
             <div className="comp__footer__row">
                 <div className="comp__footer__left">
-                    <form action="https://amazix.us17.list-manage.com/subscribe/post?u=7fe19aa618fe86fac5a6da184&amp;id=8586cd2c51" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate comp__footer__form" target="_blank" novalidate>
+                    <form action="https://amazix.us17.list-manage.com/subscribe/post?u=7fe19aa618fe86fac5a6da184&amp;id=8586cd2c51" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate comp__footer__form" target="_blank" noValidate>
                           <input type="email" value="" name="EMAIL" className="required comp__footer__email" id="mce-EMAIL" placeholder="Enter your email to receive new projects" />
                           <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" />
                           <div id="mce-responses" className="clear">
@@ -19,7 +19,7 @@ export default class Footer extends Component {
                               <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
                               </div>    
                               <div  aria-hidden="true">
-                                  <input type="text" name="b_7fe19aa618fe86fac5a6da184_8586cd2c51" tabindex="-1" value="" style={{display: 'none'}} />
+                                  <input type="text" name="b_7fe19aa618fe86fac5a6da184_8586cd2c51" tabIndex="-1" value="" style={{display: 'none'}} />
                               </div>
                     </form>
                 </div>

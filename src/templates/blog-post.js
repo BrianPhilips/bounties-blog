@@ -23,8 +23,7 @@ export const BlogPostTemplate = ({
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
-            </h1>
-            <p>{description}</p>
+            </h1>            
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -61,7 +60,13 @@ const BlogPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} 
+          meta={[
+            { name: 'description', content: `${post.frontmatter.description}` },
+            { name: 'keywords', content: `${post.frontmatter.tags}` },
+          ]}
+        />
+      }
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
     />
