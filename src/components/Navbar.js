@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import Link from 'gatsby-link'
 
-import github from '../img/github-icon.svg'
 import logo from '../img/amazix_rewards_logo.png'
 
 
@@ -24,11 +23,11 @@ export default class Navbar extends Component {
         <div className="wrapper">
           <div className="left">
             <div className="logo">
-              <Link to="/">
+              <a href="https://www.bounties.biz/">
                 <figure>
-                  <img src={logo} alt="Kaldi" />
+                  <img src={logo} alt="Amazix Rewards" />
                 </figure>
-              </Link>
+              </a>
             </div>
             <a className="menu-button" id="menu_button" onClick={this.toggleMenu}>
               <i className="fa fa-bars"></i>
